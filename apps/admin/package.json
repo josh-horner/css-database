@@ -1,0 +1,31 @@
+{
+  "name": "@css/admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port 4101",
+    "build": "next build",
+    "start": "next start --port 4101",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@css/domain": "workspace:*",
+    "@css/ui": "workspace:*",
+    "@tanstack/react-query": "5.104.2",
+    "next": "16.4.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "@trpc/client": "11.19.0"
+  },
+  "devDependencies": {
+    "@css/api": "workspace:*",
+    "@css/config": "workspace:*",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "css",
+  "private": true,
+  "packageManager": "pnpm@11.28.5",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "turbo run dev --filter=./apps/api --filter=./apps/worker --filter=./apps/admin --filter=./apps/portal",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:generate": "pnpm --filter @css/db generate",
+    "db:migrate": "pnpm --filter @css/db migrate",
+    "db:seed": "pnpm --filter @css/db seed",
+    "db:reset": "pnpm --filter @css/db reset"
+  },
+  "devDependencies": {
+    "turbo": "2.11.8",
+    "typescript": "6.0.3"
+  }
+}

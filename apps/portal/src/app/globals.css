@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@css/ui/theme.css";
+@source "../../../../packages/ui/src";
+
+html, body { height: 100%; }
+body { @apply bg-white text-slate-900 antialiased; }

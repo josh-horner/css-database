@@ -1,0 +1,38 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "tools/*"
+
+allowBuilds:
+  esbuild: true
+
+minimumReleaseAgeExclude:
+  - '@anthropic-ai/sdk@0.134.0'
+  - '@aws-sdk/client-s3@3.1152.0'
+  - '@aws-sdk/client-sesv2@3.1152.0'
+  - '@next/env@16.4.1'
+  - '@next/swc-darwin-arm64@16.4.1'
+  - '@next/swc-darwin-x64@16.4.1'
+  - '@next/swc-linux-arm64-gnu@16.4.1'
+  - '@next/swc-linux-arm64-musl@16.4.1'
+  - '@next/swc-linux-x64-gnu@16.4.1'
+  - '@next/swc-linux-x64-musl@16.4.1'
+  - '@next/swc-win32-arm64-msvc@16.4.1'
+  - '@next/swc-win32-x64-msvc@16.4.1'
+  - next@16.4.1
+  - react-dom@19.3.1
+  - react@19.3.1
+  - '@expo/cli@57.0.30'
+  - '@expo/prebuild-config@57.0.19'
+  - expo-asset@57.0.20
+  - expo-constants@57.0.22
+  - expo-modules-autolinking@57.0.16
+  - expo-modules-core@57.0.23
+  - expo@57.0.29
+  - '@expo/metro-runtime@57.0.17'
+  - '@expo/ui@57.0.24'
+  - expo-linking@57.0.13
+  - expo-router@57.0.27
+
+# Expo/React Native needs a hoisted node_modules layout.
+nodeLinker: hoisted

@@ -1,0 +1,27 @@
+{
+  "name": "@css/api-server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@css/api": "workspace:*",
+    "@css/db": "workspace:*",
+    "@css/integrations": "workspace:*",
+    "@hono/node-server": "2.1.5",
+    "@trpc/server": "11.19.0",
+    "hono": "4.13.13",
+    "pg-boss": "12.38.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@css/config": "workspace:*",
+    "@types/node": "24.19.2",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}

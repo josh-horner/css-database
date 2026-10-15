@@ -1,0 +1,38 @@
+{
+  "name": "@css/ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./map": "./src/map.tsx",
+    "./trpc": "./src/trpc.tsx",
+    "./theme.css": "./src/theme.css",
+    "./kit": "./src/kit.tsx",
+    "./fields": "./src/fields.tsx",
+    "./labels": "./src/labels.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@css/domain": "workspace:*",
+    "@tanstack/react-query": "5.104.2",
+    "@trpc/client": "11.19.0",
+    "@trpc/tanstack-react-query": "11.19.0",
+    "leaflet": "1.9.4",
+    "superjson": "2.2.6"
+  },
+  "peerDependencies": {
+    "react": "19.2.3"
+  },
+  "devDependencies": {
+    "@css/api": "workspace:*",
+    "@css/config": "workspace:*",
+    "@types/leaflet": "1.9.22",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "react": "19.2.3",
+    "typescript": "6.0.3"
+  }
+}

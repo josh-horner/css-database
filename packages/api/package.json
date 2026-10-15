@@ -1,0 +1,29 @@
+{
+  "name": "@css/api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@css/db": "workspace:*",
+    "@css/domain": "workspace:*",
+    "@css/integrations": "workspace:*",
+    "@trpc/server": "11.19.0",
+    "superjson": "2.2.6",
+    "zod": "4.6.7",
+    "pg-boss": "12.38.0"
+  },
+  "devDependencies": {
+    "@css/config": "workspace:*",
+    "@types/node": "24.19.2",
+    "typescript": "6.0.3",
+    "vitest": "5.0.4",
+    "postgres": "3.4.9"
+  }
+}

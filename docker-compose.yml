@@ -1,0 +1,15 @@
+# Local development database. Fake data only (see CLAUDE.md). Port 5544 keeps it apart from any
+# system Postgres, including the read-only legacy production copy.
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: css
+      POSTGRES_PASSWORD: css
+      POSTGRES_DB: css_dev
+    ports:
+      - "5544:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:

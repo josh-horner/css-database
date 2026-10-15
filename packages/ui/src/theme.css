@@ -1,0 +1,14 @@
+/* Shared tokens for portal and admin. Imported after `@import "tailwindcss"`. */
+@theme {
+  --color-brand: #1d4ed8;
+  --color-brand-ink: #0b1f4d;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+.css-live-pin {
+  animation: css-pulse 1.6s ease-out infinite;
+}
+@keyframes css-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.55); }
+  100% { box-shadow: 0 0 0 16px rgba(37, 99, 235, 0); }
+}

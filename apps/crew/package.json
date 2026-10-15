@@ -1,0 +1,41 @@
+{
+  "name": "@css/crew",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@css/domain": "workspace:*",
+    "@tanstack/react-query": "5.104.2",
+    "@trpc/client": "11.19.0",
+    "@trpc/tanstack-react-query": "11.19.0",
+    "expo": "~57.0.29",
+    "expo-build-properties": "~57.0.22",
+    "expo-camera": "~57.0.6",
+    "expo-constants": "~57.0.22",
+    "expo-image-manipulator": "~57.0.21",
+    "expo-keep-awake": "~57.0.2",
+    "expo-linking": "~57.0.13",
+    "expo-location": "~57.0.21",
+    "expo-router": "~57.0.27",
+    "expo-secure-store": "~57.0.4",
+    "expo-sqlite": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.2",
+    "superjson": "2.2.6"
+  },
+  "devDependencies": {
+    "@css/api": "workspace:*",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "start": "expo start --port 8091",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit",
+    "build:apk": "expo prebuild --platform android --clean && cd android && ./gradlew assembleRelease"
+  },
+  "private": true
+}
